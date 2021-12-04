@@ -10,31 +10,28 @@ From [paperswithcode](https://paperswithcode.com/sota), researchers are provided
 
 Paperswithcode archived all papers in the following schema. 
 ```
-nn_arxiv                                          
-├─ paper_clf                                      
-│  ├─ arguments.py                        
-│  ├─ run.py                              
-│  └─ utils.py                            
-├─ data                                   
-│  ├─ paperswithcode                      
-│  │  ├─ train                            
-│  │  │  ├─ dataset.arrow                 
-│  │  │  ├─ state.json                    
-│  │  │  └─ dataset_info.json         
-│  │  ├─ dev                              
-│  │  │  ├─ dataset.arrow                 
-│  │  │  ├─ state.json                    
-│  │  │  └─ dataset_info.json  
-│  │  ├─ test                             
-│  │  │  ├─ dataset.arrow                 
-│  │  │  ├─ state.json                    
-│  │  │  ├─ dataset_info.json   
-│  │  │  └─ dataset_info.json   
-│  │  └─ dataset_dict.json                
-│  └─ arxiv                                                
-├─ paper_mlm                              
-│  └─ run.py                     
-└─ README.md                              
+.
+├── README.md
+├── data
+│   └── paperswithcode
+│       ├── dataset_dict.json
+│       ├── dev
+│       │   ├── dataset.arrow
+│       │   ├── dataset_info.json
+│       │   └── state.json
+│       ├── test
+│       │   ├── dataset.arrow
+│       │   ├── dataset_info.json
+│       │   └── state.json
+│       └── train
+│           ├── dataset.arrow
+│           ├── dataset_info.json
+│           └── state.json
+└── source
+    ├── arguments.py
+    ├── run.py
+    └── utils.py
+                              
 ```
 
 ## Generation-based Paper category prediction
