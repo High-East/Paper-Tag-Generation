@@ -2,7 +2,7 @@
 
 - XAI606 수업의 두 번째 프로젝트를 위한 레포지토리입니다.
 이 레포지토리의 대부분의 코드와 파일은 [이곳](https://github.com/1pha/paper_tag_generation) 을 참고 하였습니다.
-- W&B 프로젝트 링크: [URL](https://wandb.ai/high-east/fake-face-detection/table?workspace=user-high-east)
+- W&B 프로젝트 링크: [URL](https://wandb.ai/high-east/Paper-Tag-Generation/table?workspace=user-high-east)
   
 ## Abstract
 
