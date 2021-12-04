@@ -39,7 +39,7 @@ All files inside `paper_clf`.
 
 1. To train generation-based prediction, type in below
    ```bash
-   python paper_clf/run.py --do_train --output_dir=finetuned_model
+   python source/run.py --do_train --output_dir=finetuned_model
    ```
    + Use `train_subsample_ratio` from 0 to 1, if you want to use some portion of the training data.
    + `output_dir` is should be filled in. You can use this as a checkpoint for validation and evaluation.
@@ -47,13 +47,13 @@ All files inside `paper_clf`.
    + Fill in pretrained model `model_name_or_path` with generation model. Recently Huggingface
 2. To evaluate with evaluation data (dev), type in below
    ```bash
-   python paper_clf/run.py --do_eval --model_name_or_path=finetuned_model --output_dir=finetuned_model
+   python source/run.py --do_eval --model_name_or_path=finetuned_model --output_dir=finetuned_model
    ```
    + Use `valid_subsample_ratio` from 0 to 1, if you want to use some portion of the evaluation data.
    + Put the saved/trained model directory in `model_name_or_path` to use finetuned model that you have trained.
 3. To make predictions with test data
     ```bash
-    python paper_clf/run.py --do_predict --model_name_or_path=finetuned_model --output_dir=prediction
+    python source/run.py --do_predict --model_name_or_path=finetuned_model --output_dir=prediction
     ```
     + Through this, you will use `finetuned_model` which is your model to predict the testset. In `prediction/predictions.json`, the prediction result will be saved with `arxiv_id: prediction` format.
 
